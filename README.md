@@ -9,17 +9,17 @@ The porject mainly  based on a C  implementation of [PatchMatch](https://github.
 - numpy
 ## Build
 - check OpenCV have been built as [the tutorial](https://docs.opencv.org/3.0.0/d7/d9f/tutorial_linux_install.html)
-- check [SYS_PREFIX](https://github.com/Maktu6/PyPatchMatch/blob/master/setup.py#L11) in `setup.py` is correct path of OpenCV  libraries  
+- check [`SYS_PREFIX`](https://github.com/Maktu6/PyPatchMatch/blob/master/setup.py#L11) in `setup.py` is correct path of OpenCV libraries  
 
 To build, run `sh build.sh`.
 ## Use
-PyPatchMatch_inpaint(input, mask, radius)  
+`PyPatchMatch_inpaint(input, mask, radius)`  
 Args:
 - input: the original RGB image (a HxWx3 numpy.array)
 - mask: the miss mask of image, the value in miss area is 1 (a HxW numpy.array)
 - radius: patch radius
 
 Return:
-- the result image (a HxWx3 numpy.array)  
+- the result RGB image (a HxWx3 numpy.array)  
 
-`demo.ipynb` is an example of using the module.  
+[`demo.ipynb`](https://github.com/Maktu6/PyPatchMatch/blob/master/demo.ipynb) is an example of inpainting images via PyPatchMatch.  
