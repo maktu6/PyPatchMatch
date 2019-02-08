@@ -13,7 +13,7 @@ The porject mainly  based on a C  implementation of [PatchMatch](https://github.
 
 To build, run `sh build.sh`.
 ## Use
-`PyPatchMatch_inpaint(input, mask, radius)`  
+**`PyPatchMatch_inpaint(input, mask, radius)`**  
 Args:
 - input: the original RGB image (a HxWx3 numpy.array)
 - mask: the miss mask of image, the value in miss area is 1 (a HxW numpy.array)
