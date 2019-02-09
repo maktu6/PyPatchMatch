@@ -10,8 +10,8 @@ include_directories(source/include)
 add_subdirectory (source)
 set (EXTRA_LIBS ${EXTRA_LIBS} patchmatch)
 # Declare the target (an executable)
-#ADD_EXECUTABLE(patchmatch_mat inpaint_mat.cpp)
-add_library (patchmatch_mat SHARED inpaint_mat)
+ADD_EXECUTABLE(patchmatch_mat inpaint_mat.cpp)
+#add_library (patchmatch_mat SHARED inpaint_mat)
 
 TARGET_LINK_LIBRARIES(patchmatch_mat ${OpenCV_LIBS} ${EXTRA_LIBS})
 

@@ -14,8 +14,8 @@ cv::Mat inpaintPatchMatch_mat(cv::Mat input_mat, cv::Mat mask_mat, int radius)
     output_img = inpaintPatchMatch(input_img, mask_img, radius);
     cv::Mat output_mat = cv::Mat(output_img);
 
-    // cvReleaseImage(&input_img);
-    // cvReleaseImage(&mask_img);
+    cvReleaseImage(&input_img);
+    cvReleaseImage(&mask_img);
 
     return output_mat;
 }
