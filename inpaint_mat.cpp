@@ -28,10 +28,16 @@ int main()
     input = imread("../image_files/forest/forest.bmp");
     mask = imread("../image_files/forest/forest_pruned.bmp", 0);
     // cvtColor(mask_rgb, mask, CV_BGR2GRAY);
-    cout << mask.type() << endl;
-    cout << mask.rows << endl;
+    // cout << mask.type() << endl;
+    // cout << mask.rows << endl;
     
     output = inpaintPatchMatch_mat(input, mask, 2);
+    // visualize result
+    namedWindow("MyWindow", CV_WINDOW_AUTOSIZE);
+    imshow("result", output);
+    waitKey(0);
+    destroyWindow("MyWindow");
+    cout << "done" << endl;
     
     return 0;
 }
