@@ -23,3 +23,7 @@ Return:
 - the result RGB image (a HxWx3 `numpy.array`)  
 
 [`demo.ipynb`](https://github.com/Maktu6/PyPatchMatch/blob/master/demo.ipynb) is an example of inpainting images via PyPatchMatch.  
+## Reference
+- https://github.com/younesse-cv/PatchMatch  
+- https://github.com/solivr/cython_opencvMat
+
