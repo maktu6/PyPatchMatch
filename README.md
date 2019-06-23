@@ -9,7 +9,7 @@ The porject mainly  based on a C implementation of [PatchMatch](https://github.c
 - numpy
 ## Build
 - check OpenCV have been built as [the tutorial](https://docs.opencv.org/3.0.0/d7/d9f/tutorial_linux_install.html) (Note the version should be v2.2.0)
-- check [`SYS_PREFIX`](https://github.com/Maktu6/PyPatchMatch/blob/master/setup.py#L11) in `setup.py` is correct path of OpenCV libraries 
+- check [`SYS_PREFIX`](https://github.com/Maktu6/PyPatchMatch/blob/master/setup.py#L11) in `setup.py` is the correct path of OpenCV libraries 
 
 To build, run `sh build.sh`.
 ## Use
